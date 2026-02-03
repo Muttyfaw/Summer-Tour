@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCAPE 2026 | Miles and Memories</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0f172a; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        /* Custom Countdown Styles */
+        .countdown-item {
+            @apply flex flex-col items-center justify-center glass rounded-2xl w-20 h-20 md:w-24 md:h-24;
+        }
+    </style>
+</head>
+<body class="text-slate-200">
+
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&q=80" class="w-full h-full object-cover opacity-30" alt="Travel Background">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-slate-900"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6">
+            <p class="uppercase tracking-[0.3em] text-sky-400 mb-4 font-bold">Miles and Memories Presents</p>
+            <h1 class="text-6xl md:text-9xl font-extrabold mb-6 tracking-tighter">ESCAPE <span class="gradient-text">2026</span></h1>
+            
+            <div class="flex justify-center gap-3 md:gap-6 mb-10">
+                <div class="countdown-item glass rounded-2xl p-2 min-w-[70px]">
+                    <span id="days" class="text-2xl md:text-4xl font-bold text-white">00</span>
+                    <span class="text-[10px] uppercase tracking-widest text-sky-400 font-bold">Days</span>
+                </div>
+                <div class="countdown-item glass rounded-2xl p-2 min-w-[70px]">
+                    <span id="hours" class="text-2xl md:text-4xl font-bold text-white">00</span>
+                    <span class="text-[10px] uppercase tracking-widest text-sky-400 font-bold">Hrs</span>
+                </div>
+                <div class="countdown-item glass rounded-2xl p-2 min-w-[70px]">
+                    <span id="minutes" class="text-2xl md:text-4xl font-bold text-white">00</span>
+                    <span class="text-[10px] uppercase tracking-widest text-sky-400 font-bold">Min</span>
+                </div>
+                <div class="countdown-item glass rounded-2xl p-2 min-w-[70px]">
+                    <span id="seconds" class="text-2xl md:text-4xl font-bold text-sky-400">00</span>
+                    <span class="text-[10px] uppercase tracking-widest text-sky-400 font-bold">Sec</span>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4 text-lg">
+                <span class="glass px-6 py-2 rounded-full"><i class="fas fa-calendar-alt mr-2 text-sky-400"></i>June 13th, 2026</span>
+                <span class="glass px-6 py-2 rounded-full"><i class="fas fa-map-marker-alt mr-2 text-sky-400"></i>Gomoa Wonderland</span>
+            </div>
+            <a href="#payment" class="inline-block mt-10 bg-sky-500 hover:bg-sky-400 text-white font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-lg shadow-sky-500/20">
+                Secure Your Spot
+            </a>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-3xl">
+                <i class="fas fa-clock text-3xl text-sky-400 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Departure</h3>
+                <p class="text-slate-400">6:00 AM Prompt</p>
+                <p class="text-slate-400 mt-2">Pickup: Mallam Junction Total Station</p>
+            </div>
+            <div class="glass p-8 rounded-3xl border-sky-500/30 border">
+                <i class="fas fa-ticket-alt text-3xl text-sky-400 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Rate</h3>
+                <p class="text-4xl font-extrabold text-white">GH₵ 400</p>
+                <p class="text-slate-400 mt-2 italic text-sm">All-inclusive package</p>
+            </div>
+            <div class="glass p-8 rounded-3xl">
+                <i class="fas fa-phone-alt text-3xl text-sky-400 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">RSVP</h3>
+                <p class="text-slate-400 text-sm">0555073133 / 0276293877</p>
+                <p class="text-slate-400 text-sm">0262209447 / 0546117004</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-extrabold mb-12 text-center">The <span class="gradient-text">Adventure</span> Lineup</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="glass p-4 rounded-xl text-center hover:bg-white/10 transition-colors">Football</div>
+                <div class="glass p-4 rounded-xl text-center hover:bg-white/10 transition-colors">Basketball</div>
+                <div class="glass p-4 rounded-xl text-center hover:bg-white/10 transition-colors">Volleyball</div>
+                <div class="glass p-4 rounded-xl text-center hover:bg-white/10 transition-colors">Soft Archery</div>
+                <div class="glass p-4 rounded-xl text-center hover:bg-white/10 transition-colors">Table Tennis</div>
+                <div class="glass p-4 rounded-xl text-center hover:bg-white/10 transition-colors">Darts</div>
+                <div class="glass p-4 rounded-xl text-center hover:bg-white/10 transition-colors">Swings</div>
+                <div class="glass p-4 rounded-xl text-center hover:bg-white/10 transition-colors">Board Games</div>
+                <div class="glass p-4 rounded-xl text-center hover:bg-white/10 transition-colors">Card Games</div>
+                <div class="glass p-4 rounded-xl text-center hover:bg-white/10 transition-colors">Jenga</div>
+                <div class="glass p-4 rounded-xl text-center hover:bg-white/10 transition-colors">Swimming</div>
+                <div class="glass p-4 rounded-xl text-center hover:bg-white/10 transition-colors font-bold text-sky-400">& Much More!</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="payment" class="max-w-4xl mx-auto px-6 py-24 text-center">
+        <div class="glass p-10 md:p-16 rounded-[3rem] relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-sky-500/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
+            <h2 class="text-3xl font-extrabold mb-6">Ready to Escape?</h2>
+            <p class="text-slate-400 mb-8">Make your payment via Mobile Money to secure your seat.</p>
+            
+            <div class="bg-slate-800/50 inline-block p-8 rounded-2xl border border-white/5">
+                <p class="text-sm uppercase tracking-widest text-slate-500 mb-2">MoMo Details</p>
+                <p class="text-2xl font-mono font-bold text-white mb-1">0546117004</p>
+                <p class="text-lg text-sky-400 font-bold mb-4">Danso Staffia</p>
+                <div class="bg-sky-500/20 text-sky-300 py-2 px-4 rounded-lg text-sm inline-block">
+                    Reference: <strong>ESCAPE2026</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-slate-500 text-sm border-t border-white/5">
+        &copy; 2026 Miles and Memories. All rights reserved.
+    </footer>
+
+    <script>
+        function updateCountdown() {
+            // Set the date we're counting down to
+            const eventDate = new Date("June 13, 2026 06:00:00").getTime();
+            const now = new Date().getTime();
+            const difference = eventDate - now;
+
+            if (difference > 0) {
+                const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const s = Math.floor((difference % (1000 * 60)) / 1000);
+
+                document.getElementById("days").innerText = d.toString().padStart(2, '0');
+                document.getElementById("hours").innerText = h.toString().padStart(2, '0');
+                document.getElementById("minutes").innerText = m.toString().padStart(2, '0');
+                document.getElementById("seconds").innerText = s.toString().padStart(2, '0');
+            } else {
+                // If the date has passed
+                document.getElementById("countdown").innerHTML = "<h2 class='text-2xl font-bold text-sky-400'>THE ADVENTURE HAS BEGUN!</h2>";
+            }
+        }
+
+        // Run every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+    </script>
+
+</body>
+</html>
